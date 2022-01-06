@@ -1,0 +1,8 @@
+server.port: ${service_port:3000}
+spring:
+  application.name: bff
+
+member:
+  host: ${member_host:localhost}
+  port: ${member_port:3001}
+  
