@@ -3,6 +3,6 @@ spring:
   application.name: bff
 
 member:
-  host: ${member_host:localhost}
-  port: ${member_port:3001}
+  host: ${ottmember_host:localhost}
+  port: ${ottmember_port:3001}
   

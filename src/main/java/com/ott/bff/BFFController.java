@@ -16,9 +16,9 @@ import reactor.core.publisher.Mono;
 public class BFFController {
     private final Logger log = LoggerFactory.getLogger(getClass());
 
-    @Value("${member.host}")
+    @Value("${ottmember.host}")
     private String memberHost;
-    @Value("${member.port}")
+    @Value("${ottmember.port}")
     private String memberPort;
 
     @GetMapping("{id}")
