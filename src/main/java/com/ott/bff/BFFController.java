@@ -26,6 +26,7 @@ public class BFFController {
 
         WebClient client = WebClient.create();
 
+        log.info("### PORT: {}", memberPort);
         String uri = "http://" + memberHost + ":" + memberPort + "/members/" + id;
         log.info("### API URI: {}", uri);
 
