@@ -32,7 +32,9 @@ public class BFFController {
 
         WebClient client = WebClient.create();
 
-        headers.forEach((key, value) -> log.info(">>>>> Header '{}' => {}", key, value));
+        headers.forEach((key, value) -> {
+            log.info(">>>>> Header '{}' => {}", key, value);
+        });
 
         String uri = "http://" + memberHost + ":" + memberPort + "/members/" + id;
         log.info("### API URI: {}", uri);
