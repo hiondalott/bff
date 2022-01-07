@@ -2,7 +2,9 @@ server.port: ${service_port:3000}
 spring:
   application.name: bff
 
-member:
+ottmember:
   host: ${ottmember_host:localhost}
   port: ${ottmember_port:3001}
-  
+ottrecommend:
+  host: ${recommend_host:localhost}
+  port: ${recommend_port:3002}
